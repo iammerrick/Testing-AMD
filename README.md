@@ -5,3 +5,8 @@ This is not a library that demonstrates testing AMD. Well, it does but its desig
 ## Structure
 
 Just opening tests.html should run the tests. There is a test file for each app file. And occasionally a markdown document to better articulate the pain points.
+
+## Mocking A Dependency
+
+- [Document](documents/MockingADependency.md)
+- [Examples](test/tests/MockingADependencyTest.js)
