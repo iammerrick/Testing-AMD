@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Squire.js Tests</title>
+
+  <!-- Test Environment -->
+  <link rel="stylesheet" href="vendor/mocha.css">
+
+  <script src="vendor/mocha.js"></script>
+  <script src="vendor/chai.js"></script>
+  <script src="vendor/sinon-1.5.2.js"></script>
+  <script src="vendor/sinon-chai.js"></script>
+  <script>
+    window.expect = chai.expect;
+    mocha.setup('bdd');
+  </script>
+  <!-- End Test Environment -->
+
+  <!-- Require.js Configuration with test overrides! -->
+  <script src="../src/config.js"></script>
+  <script src="config.js"></script>
+  <!-- End Require.js Configuration -->
+
+  <script src="../src/vendor/require.js"></script>
+  <script>
+    require(['tests/MockingADependencyTest'], function(){
+      mocha.run();
+    });
+  </script>
+</head>
+<body>
+  <div id="mocha"></div>
+</body>
+</html>
